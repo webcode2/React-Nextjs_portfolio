@@ -36,7 +36,7 @@ export default function MainHeaderNav() {
                   <div className="xl:mt-10  py-16 rounded hidden group-hover:flex flex-wrap  gap-y-3 lg:w-[50rem] xl:w-[64rem] justify-center z-50 bg-base-200  shadow-lg">
                     {nav_link.sub.map((sub_links, index) => {
                       return (
-                        <div className="min-w-[20%] ">
+                        <div className="min-w-[20%] " key={index+"sublink"}>
                           <div className="">
                             <a
                               href=""

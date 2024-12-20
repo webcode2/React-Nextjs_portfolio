@@ -4,6 +4,7 @@ import { BsEmojiHeartEyes } from "react-icons/bs";
 import { CiCalendarDate, CiImageOn, CiVideoOn } from "react-icons/ci";
 import Avatar from "./Avatar";
 import PostFeed from "components/testPost";
+import Image from "next/image";
 
 export default function NewPost({ avatar }) {
   const [inputVisible, setInputVisible] = useState(false);
@@ -46,7 +47,7 @@ export default function NewPost({ avatar }) {
       <div className=" flex-1">
         <div className=" text-gray-400 font-semibold text-2xl f">
           {!inputVisible && (
-            <p onClick={handleNewPostFocus}> What's your pet up to...</p>
+            <p onClick={handleNewPostFocus}> What&rsquo;s your pet up to...</p>
           )}
         </div>
         {newPostMedia.length > 0 && (
@@ -61,7 +62,7 @@ export default function NewPost({ avatar }) {
                   key={index}
                   className={`relative w-full overflow-hidden rounded-lg`}
                 >
-                  <img
+                  <Image
                     src={URL.createObjectURL(item)}
                     alt={`Media ${index + 1}`}
                     className="w-full h-full object-cover"
@@ -119,7 +120,7 @@ export default function NewPost({ avatar }) {
             <BsEmojiHeartEyes />
             <CiCalendarDate />
           </div>
-          <div className="btn_ ">
+          <div className="btn ">
             <button
               type="submit"
               className="btn px-8 text-lg btn-primary rounded-xl text-white"

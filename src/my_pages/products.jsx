@@ -3,6 +3,7 @@ import Carosel from "./homepage/carosel";
 import ShowcaseProducts from "components/products/ShowcaseProducts";
 import { CiHeart } from "react-icons/ci";
 import BlackButton from "components/products/BlackButton";
+import Image from "next/image";
 
 const ProductCard = ({ product }) => {
   const { name, mediaType, mediaSrc, price, discount, rating, reviews, tags } =
@@ -14,7 +15,7 @@ const ProductCard = ({ product }) => {
     <div className="bg-white rounded-lg overflow-hidden  transition-shadow duration-300">
       <div className="relative w-full">
         {mediaType === "image" ? (
-          <img src={mediaSrc} alt={name} className="w-full  object-cover" />
+          <Image src={mediaSrc} alt={name} className="w-full  object-cover" />
         ) : (
           <video
             src={mediaSrc}

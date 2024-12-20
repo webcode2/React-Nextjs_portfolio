@@ -5,6 +5,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { IoEllipsisVertical } from "react-icons/io5";
 import { PiPawPrintThin } from "react-icons/pi";
 import Avatar from "./socials/Avatar";
+import Image from "next/image";
 
 const PostFeed = ({ post }) => {
   const displayedMedia = post.content.media.slice(0, 4); // Show up to 4 media items
@@ -12,6 +13,7 @@ const PostFeed = ({ post }) => {
     post.content.media.length > 4 ? post.content.media.length - 4 : 0;
   const size = 25;
 
+  
   return (
     <div className="w-full border-t ">
       <div className="max-w-xl mx-auto ">
@@ -46,7 +48,7 @@ const PostFeed = ({ post }) => {
                 } overflow-hidden rounded-lg`}
               >
                 {item.type === "image" ? (
-                  <img
+                  <Image
                     src={item.src}
                     alt={`Media ${index + 1}`}
                     className="w-full h-full object-cover"

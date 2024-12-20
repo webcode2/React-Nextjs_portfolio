@@ -79,7 +79,7 @@ const ProductDetails = () => {
                   </div>
                 </div>
 
-                <BlackButton title={"Add to Your Pack"}/>
+                <BlackButton title={"Add to Your Pack"} />
 
                 <button className="btn btn-neutral  w-3/12 md:w-auto">
                   <IoHeartOutline size={25} />
@@ -139,7 +139,7 @@ const ProductDetails = () => {
               {/* Product Specifications */}
               <ul className="space-y-2 font-semibold list-disc">
                 <li>Material: Soft Cotton and Polyester</li>
-                <li>Size: 24" x 18" x 6"</li>
+                <li>Size: 24&rdquo; x 18&rdquo; x 6&rdquo;</li>
                 <li>Weight: 2.5 lbs</li>
                 <li>Color: Beige</li>
                 <li>Suitable for small to medium-sized pets</li>
@@ -244,7 +244,7 @@ const ProductDetails = () => {
                 "https://images.pexels.com/photos/4588048/pexels-photo-4588048.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
             },
           ].map((item, index) => (
-            <MayAlsoLikeProduct item={item} id={index} />
+            <MayAlsoLikeProduct key={index} item={item} id={index} />
           ))}
         </div>
       </div>

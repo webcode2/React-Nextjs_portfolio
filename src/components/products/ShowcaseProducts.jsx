@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 import ImageOverlay from "components/ImageOverlay";
+import Image from "next/image";
 
 export default function ShowcaseProducts() {
   return (
@@ -32,7 +33,7 @@ export default function ShowcaseProducts() {
     >
       <SwiperSlide>
         <div className="w-full h-60 rounded-md  overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1601758261049-55d060e1159a?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3N8ZW58MHx8MHx8fDA%3D"
             title="Beautiful dogs"
             alt=""
@@ -47,7 +48,7 @@ export default function ShowcaseProducts() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-full h-60 rounded-md  overflow-hidden">
-          <img
+          <Image
             src="https://images.pexels.com/photos/19820055/pexels-photo-19820055/free-photo-of-cute-dog-in-paw-socks-on-winter-ground.jpeg?auto=compress&cs=tinysrgb&w=1460&dpr=1"
             title="Beautiful dogs"
             alt=""
@@ -67,7 +68,7 @@ export default function ShowcaseProducts() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-full h-60 rounded-md bg-blend-multiply bg-green-400">
-        <img
+        <Image
             src="https://res.cloudinary.com/dozd0nyze/image/upload/v1734303883/puppy_app/products/Alaskan-Malamute-1_i6ufvy.jpg"
             title="Beautiful dogs"
             alt=""

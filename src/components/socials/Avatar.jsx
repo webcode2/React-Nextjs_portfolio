@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
-function Avatar({imgUrl}) {
+function Avatar({ imgUrl }) {
   return (
     <div className="avatar">
       <div className="w-12 rounded-full">
-        <img src={imgUrl} />
+        <Image alt={"prfile"} src={imgUrl} />
       </div>
     </div>
   );

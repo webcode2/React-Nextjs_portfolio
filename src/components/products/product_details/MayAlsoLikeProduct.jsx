@@ -1,10 +1,11 @@
+import Image from "next/image"
 import React from 'react'
 
 export default function MayAlsoLikeProduct({item,id}) {
   return (
     <div key={id} className="rounded-t-md shadow-md overflow-hidden">
     <figure>
-      <img
+      <Image
         src={item.image}
         alt={item.title}
         className="h-40 object-cover w-full hover:scale-105 transition-all ease-linear "

@@ -3,6 +3,7 @@ import { GiDogBowl, GiDogHouse } from "react-icons/gi";
 import { PiPawPrintThin } from "react-icons/pi";
 import { IoEllipsisVertical } from "react-icons/io5";
 import { GoReply } from "react-icons/go";
+import Image from "next/image";
 
 function Post({ post }) {
   const size = 25;
@@ -12,7 +13,10 @@ function Post({ post }) {
         <div className="flex flex-1 gap-x-3">
           <div className="avatar">
             <div className="w-12 rounded-full">
-              <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              <Image
+                alt="product"
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              />
             </div>
           </div>
           <div className="">
@@ -28,38 +32,38 @@ function Post({ post }) {
       </div>
       <div className="content lg:px-10 mx-auto">
         <div className="media overflow-hidden flex  line-clamp-2  gap-6 mt-2 ">
-          <img
-          className="object-cover w-3/12"
+          <Image
+            className="object-cover w-3/12"
             src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             srcSet=""
           />
-          <img
-          className="object-cover w-32"
+          <Image
+            className="object-cover w-32"
             src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             srcSet=""
           />
-          <img
-          className="object-cover w-32"
+          <Image
+            className="object-cover w-32"
             src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             srcSet=""
           />
-          <img
-          className="object-cover w-32"
+          <Image
+            className="object-cover w-32"
             src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             srcSet=""
           />
-          <img
-          className="object-cover w-32"
+          <Image
+            className="object-cover w-32"
             src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             srcSet=""
           />
-          <img
-          className="object-cover w-32"
+          <Image
+            className="object-cover w-32"
             src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             srcSet=""

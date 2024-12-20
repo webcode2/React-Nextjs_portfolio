@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { GiSniffingDog } from "react-icons/gi";
 import { GoComment } from "react-icons/go";
@@ -51,7 +52,7 @@ export default function SocialsTopNav({
                 className="btn btn-ghost btn-circle avatar"
               >
                 <div className="w-10 rounded-full">
-                  <img
+                  <Image
                     alt="Tailwind CSS Navbar component"
                     src="https://plus.unsplash.com/premium_photo-1707410050564-df6b5503f220?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   />

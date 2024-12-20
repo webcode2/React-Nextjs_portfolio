@@ -10,6 +10,7 @@ import "swiper/css/thumbs";
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import Image from "next/image";
 
 export default function ProductSlide({ images = [] }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -28,8 +29,8 @@ export default function ProductSlide({ images = [] }) {
         className="mySwiper2"
       >
         {images.map((img, index) => (
-          <SwiperSlide>
-            <img
+          <SwiperSlide key={`product_slide-${index}`}>
+            <Image
               key={2}
               src={img}
               alt={`Product image ${index + 1}`}
@@ -48,8 +49,8 @@ export default function ProductSlide({ images = [] }) {
         className="mySwiper justify-center mt-8 h-40"
       >
         {images.map((img, index) => (
-          <SwiperSlide>
-            <img
+          <SwiperSlide key={`slide_thumnail_${index}`}>
+            <Image
               key={2}
               src={img}
               alt={`Product image ${index + 1}`}

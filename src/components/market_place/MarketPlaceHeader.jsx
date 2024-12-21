@@ -4,7 +4,7 @@ import { FaShoppingCart, FaUser, FaHeart, FaSearch } from "react-icons/fa";
 import MainHeaderNav from "../products/HeaderNav";
 import { CiHeart, CiShoppingCart, CiUser } from "react-icons/ci";
 
-export default function HeaderNav() {
+export default function HeaderNav({ nav_link }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -22,7 +22,10 @@ export default function HeaderNav() {
         <div className="flex justify-between items-center py-7">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="lg:text-4xl text-2xl  font-bold text-gray-800">
+            <a
+              href="#"
+              className="lg:text-4xl text-2xl  font-bold text-gray-800"
+            >
               Pets House
             </a>
           </div>
@@ -60,7 +63,7 @@ export default function HeaderNav() {
               href="#"
               className="text-gray-800 hover:text-blue-600 transition duration-300"
             >
-              <CiUser className="w-6 h-6 hover:scale-105"  />
+              <CiUser className="w-6 h-6 hover:scale-105" />
             </a>
             {/* Mobile Menu Button */}
             <button
@@ -85,41 +88,6 @@ export default function HeaderNav() {
           </div>
         </div>
       </div>
-
-      {/* Search Bar */}
-      {isSearchOpen && (
-        <div className="bg-gray-100 px-4 py-2">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-      )}
-
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white shadow-md">
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-          >
-            Shop
-          </a>
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-          >
-            Contact
-          </a>
-        </div>
-      )}
     </nav>
   );
 }

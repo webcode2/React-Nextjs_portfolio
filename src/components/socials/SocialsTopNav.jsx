@@ -79,13 +79,22 @@ export default function SocialsTopNav({
                 </li>
               </ul>
             </div>
-            <div className="cart">
+            <div
+              className="tooltip hoher:tooltip-open tooltip-bottom"
+              data-tip="Market Place"
+            >
               <TfiShoppingCartFull className="hover:scale-110 " size={25} />
             </div>
-            <div className="chat_icon ">
+            <div
+              className="tooltip hoher:tooltip-open tooltip-bottom"
+              data-tip="Chat"
+            >
               <GoComment size={25} className="hover:scale-110 " />
             </div>
-            <div className="chat_icon ">
+            <div
+              className="tooltip hoher:tooltip-open tooltip-bottom"
+              data-tip="Find Pet"
+            >
               <GiSniffingDog size={25} className="hover:scale-110 " />
             </div>
           </div>

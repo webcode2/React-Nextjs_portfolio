@@ -11,6 +11,7 @@ function ChatCard() {
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure>
         <Image
+           width={16} height={9} layout="responsive"
           alt="Shoes"
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
 
@@ -19,7 +20,9 @@ function ChatCard() {
           // blurDataURL="data:..." automatically provided
           // placeholder="blur" // Optional blur-up while loading
         />
+        width={50}
         <Image
+          width={16} height={9} layout="responsive"
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
           alt="Shoes"
           // width={500} automatically provided
@@ -27,7 +30,6 @@ function ChatCard() {
           // blurDataURL="data:..." automatically provided
           // placeholder="blur" // Optional blur-up while loading
         />
-
       </figure>
       <div className="card-body">
         <h2 className="card-title">

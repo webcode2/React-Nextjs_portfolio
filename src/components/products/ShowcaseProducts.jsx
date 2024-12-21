@@ -34,8 +34,11 @@ export default function ShowcaseProducts() {
       <SwiperSlide>
         <div className="w-full h-60 rounded-md  overflow-hidden">
           <Image
+            width={16}
+            height={9}
+            layout="responsive"
             src="https://images.unsplash.com/photo-1601758261049-55d060e1159a?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3N8ZW58MHx8MHx8fDA%3D"
-            title="Beautiful dogs"
+            title="Beautiful dogs "
             alt=""
             className=" object-cover object-center"
           />
@@ -49,12 +52,13 @@ export default function ShowcaseProducts() {
       <SwiperSlide>
         <div className="w-full h-60 rounded-md  overflow-hidden">
           <Image
+           width={16} height={9} layout="responsive"
             src="https://images.pexels.com/photos/19820055/pexels-photo-19820055/free-photo-of-cute-dog-in-paw-socks-on-winter-ground.jpeg?auto=compress&cs=tinysrgb&w=1460&dpr=1"
             title="Beautiful dogs"
             alt=""
             className=" object-cover object-center"
           />
-         
+
           <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/90 to-black/0 pointer-events-none" />
           <div className="absolute bottom-10 left-5 text-white z-20">
             <h1 className="text-2xl font-bold m-0">American Bull Dog</h1>
@@ -68,7 +72,9 @@ export default function ShowcaseProducts() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-full h-60 rounded-md bg-blend-multiply bg-green-400">
-        <Image
+          <Image
+                             width={16} height={9} layout="responsive"
+
             src="https://res.cloudinary.com/dozd0nyze/image/upload/v1734303883/puppy_app/products/Alaskan-Malamute-1_i6ufvy.jpg"
             title="Beautiful dogs"
             alt=""

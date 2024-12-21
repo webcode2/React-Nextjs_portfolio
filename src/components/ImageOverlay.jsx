@@ -6,6 +6,7 @@ const ImageOverlay = ({ imageSrc = "", title = "", description = "" }) => {
     <div className="relative w-full h-[500px] overflow-hdden flex items-center justify-center">
       <Image
         src={imageSrc}
+         width={16} height={9} layout="responsive"
         alt={title}
         className="w-full h-full object-cover object-center"
       />

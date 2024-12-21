@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
     <div className="bg-white rounded-lg overflow-hidden  transition-shadow duration-300">
       <div className="relative w-full">
         {mediaType === "image" ? (
-          <Image src={mediaSrc} alt={name} className="w-full  object-cover" />
+          <Image src={mediaSrc}  width={16} height={9} layout="responsive" alt={name} className="w-full  object-cover" />
         ) : (
           <video
             src={mediaSrc}

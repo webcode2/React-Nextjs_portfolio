@@ -13,9 +13,8 @@ const PostFeed = ({ post }) => {
     post.content.media.length > 4 ? post.content.media.length - 4 : 0;
   const size = 25;
 
-  
   return (
-    <div className="w-full border-t ">
+    <div className="w-full border lg:border-t md:border-none px-2">
       <div className="max-w-xl mx-auto ">
         <div className="p-2">
           {/* Post Header */}
@@ -49,13 +48,18 @@ const PostFeed = ({ post }) => {
               >
                 {item.type === "image" ? (
                   <Image
+                    width={16}
+                    height={9}
                     src={item.src}
+                    layout="responsive"
                     alt={`Media ${index + 1}`}
                     className="w-full h-full object-cover"
                   />
                 ) : (
                   <video
                     src={item.src}
+                    width={16}
+                    height={9}
                     className="w-full h-full object-cover"
                     controls
                   />

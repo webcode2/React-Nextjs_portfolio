@@ -5,7 +5,13 @@ function Avatar({ imgUrl }) {
   return (
     <div className="avatar">
       <div className="w-12 rounded-full">
-        <Image alt={"prfile"} src={imgUrl} />
+        <Image
+          width={16}
+          height={9}
+          layout="responsive"
+          alt={"prfile"}
+          src={imgUrl}
+        />
       </div>
     </div>
   );

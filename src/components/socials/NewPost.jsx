@@ -42,8 +42,8 @@ export default function NewPost({ avatar }) {
   }, [newPostMedia]);
 
   return (
-    <div className="newPost border rounded-lg my-3 shadow-md flex  gap-x-6 px-10 py-10 items-start ">
-      <Avatar imgUrl={avatar} />
+    <div className="newPost border rounded-lg my-3 shadow-md lg:flex  gap-x-6 px-10 py-10 items-start ">
+     <div className="hidden lg:block"> <Avatar imgUrl={avatar} /></div>
       <div className=" flex-1">
         <div className=" text-gray-400 font-semibold text-2xl f">
           {!inputVisible && (
@@ -63,6 +63,9 @@ export default function NewPost({ avatar }) {
                   className={`relative w-full overflow-hidden rounded-lg`}
                 >
                   <Image
+                    width={16}
+                    height={9}
+                    layout="responsive"
                     src={URL.createObjectURL(item)}
                     alt={`Media ${index + 1}`}
                     className="w-full h-full object-cover"
@@ -104,14 +107,14 @@ export default function NewPost({ avatar }) {
         )}
         <div className="media_types border-t mt-6 pt-3 flex justify-between items-center ">
           <div className="left flex gap-x-4">
-            <label for="file-upload" className="cursor-pointer">
+            <label htmlFor="file-upload" className="cursor-pointer">
               <CiImageOn />
             </label>
             <input
               onChange={handleImageUpload}
               id="file-upload"
               name="file-upload"
-              accept="image/*"
+              accept="image/*s"
               type="file"
               className="hidden"
               multiple
@@ -120,7 +123,7 @@ export default function NewPost({ avatar }) {
             <BsEmojiHeartEyes />
             <CiCalendarDate />
           </div>
-          <div className="btn ">
+          <div className=" ">
             <button
               type="submit"
               className="btn px-8 text-lg btn-primary rounded-xl text-white"

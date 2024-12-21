@@ -32,6 +32,9 @@ export default function ProductSlide({ images = [] }) {
           <SwiperSlide key={`product_slide-${index}`}>
             <Image
               key={2}
+              width={16}
+              height={9}
+              layout="responsive"
               src={img}
               alt={`Product image ${index + 1}`}
               className="w-full h-80 object-cover hover:scale-105    transition-all ease-linear  rounded-lg"
@@ -53,6 +56,9 @@ export default function ProductSlide({ images = [] }) {
             <Image
               key={2}
               src={img}
+              width={16}
+              height={9}
+              layout="responsive"
               alt={`Product image ${index + 1}`}
               className=" object-cover hover:scale-105    transition-all ease-linear  rounded-lg"
             />

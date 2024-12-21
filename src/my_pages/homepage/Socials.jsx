@@ -61,14 +61,16 @@ const SocialHome = () => {
 
       {/* Main Content */}
 
-      <main className="h-screen md:w-9/12 overflow-hidden bg-transparent">
+      <main className="h-screen md:w-9/12 overflow-hidden px-3 bg-transparent">
         <div className="w-full container flex h-full ">
           <div className="md:w-8/12 h-full overflow-auto  ">
             <SocialsTopNav toggleSidebar={toggleSidebar} main={true} />
-            <NewPost avatar={post.meta.avatar} />
-            <PostFeed post={post} />
-            <PostFeed post={post} />
-            <PostFeed post={post} />
+            <div className="content">
+              <NewPost avatar={post.meta.avatar} />
+              <PostFeed post={post} />
+              <PostFeed post={post} />
+              <PostFeed post={post} />
+            </div>
           </div>
           <div className="md:block hidden w-4/12 sticky h-screen overflow-y-auto ">
             <SocialsTopNav right={true} />

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaShoppingCart, FaUser, FaHeart, FaSearch } from "react-icons/fa";
 import MainHeaderNav from "../products/HeaderNav";
 import { CiHeart, CiShoppingCart, CiUser } from "react-icons/ci";
+import Link from "next/link";
 
 export default function HeaderNav({ nav_links = [] }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -95,7 +96,7 @@ export default function HeaderNav({ nav_links = [] }) {
             {nav_links.map((link, index) => {
               return (
                 <>
-                  <a href="">{link.title}</a>
+                  <Link href={link.href}>{link.title}</Link>
                 </>
               );
             })}

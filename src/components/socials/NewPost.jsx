@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { BsEmojiHeartEyes } from "react-icons/bs";
 import { CiCalendarDate, CiImageOn, CiVideoOn } from "react-icons/ci";
 import Avatar from "./Avatar";
-import PostFeed from "components/testPost";
+import PostFeed from "components/PostFeed";
 import Image from "next/image";
 
 export default function NewPost({ avatar }) {

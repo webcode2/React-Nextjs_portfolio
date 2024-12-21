@@ -1,6 +1,6 @@
 "use client";
 import { FaUser } from "react-icons/fa";
-import PostFeed from "components/testPost";
+import PostFeed from "components/PostFeed";
 import React, { useState } from "react";
 import { GiSniffingDog } from "react-icons/gi";
 import { GoComment } from "react-icons/go";
@@ -20,9 +20,7 @@ import SocialsTopNav from "components/socials/SocialsTopNav";
 const SocialHome = () => {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarVisible(!isSidebarVisible);
-  };
+  const toggleSidebar = () => setSidebarVisible((prev) => !prev);
 
   let post = {
     meta: {
@@ -56,7 +54,10 @@ const SocialHome = () => {
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-10 md:hidden"
           onClick={toggleSidebar}
-        ></div>
+        >
+          <div className="w-6/12 bg-fuchsia-500 h-full z-[70] ">
+          </div>
+        </div>
       )}
 
       {/* Main Content */}

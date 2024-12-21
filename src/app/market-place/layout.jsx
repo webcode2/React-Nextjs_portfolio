@@ -1,6 +1,6 @@
 // import HeaderNav from "components/HeaderNav";
 import Footer from "components/Footer";
-import HeaderNav from "components/new_head";
+import HeaderNav from "components/market_place/MarketPlaceHeader";
 import React from "react";
 
 export default function RootLayout({ children }) {

@@ -14,7 +14,7 @@ const PostFeed = ({ post }) => {
   const size = 25;
 
   return (
-    <div className="w-full border lg:border-t-0 px-2">
+    <div className="w-full border border-b-0 px-2">
       <div className="max-w-xl mx-auto ">
         <div className="p-2">
           {/* Post Header */}
@@ -76,7 +76,7 @@ const PostFeed = ({ post }) => {
             ))}
           </div>
           {/* Post Content */}
-          <p className="text-gray-800 mt-6 font-medium  font-sans text-lg">
+          <p className="text-gray-800 mt-6 font-medium  font-sans md:text-lg text-base">
             This is an example post description with media content below. Lorem
             ipsum dolor sit amet consectetur adipisicing elit. Magni, sapiente
             recusandae reprehenderit id minus vitae, sint quod totam blanditiis

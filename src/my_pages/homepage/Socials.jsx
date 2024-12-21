@@ -47,7 +47,7 @@ const SocialHome = () => {
   };
 
   return (
-    <div className="relative flex h-screen overflow-hidden ">
+    <div className="relative flex lg:h-screen overflow-hidden ">
       {/* Sidebar */}
       <Aside />
 
@@ -61,9 +61,9 @@ const SocialHome = () => {
 
       {/* Main Content */}
 
-      <main className="h-screen md:w-9/12 overflow-hidden px-3 bg-transparent">
+      <main className="lg:h-screen md:w-9/12 lg:overflow-hidden px-3 bg-transparent">
         <div className="w-full container flex h-full ">
-          <div className="md:w-8/12 h-full overflow-auto  ">
+          <div className="md:w-8/12 h-full lg:overflow-auto  ">
             <SocialsTopNav toggleSidebar={toggleSidebar} main={true} />
             <div className="content">
               <NewPost avatar={post.meta.avatar} />

@@ -14,7 +14,7 @@ const PostFeed = ({ post }) => {
   const size = 25;
 
   return (
-    <div className="w-full border lg:border-t md:border-none px-2">
+    <div className="w-full border lg:border-t-0 px-2">
       <div className="max-w-xl mx-auto ">
         <div className="p-2">
           {/* Post Header */}
